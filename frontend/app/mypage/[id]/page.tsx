@@ -17,7 +17,7 @@ const Mypage = ({params}:any) => {
   useEffect(() => {
     const fetchAverageData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/average_data', { params: { user_id: params.id }});
+        const response = await axios.get('http://13.211.73.90:5000/average_data', { params: { user_id: params.id }});
         const { average_weight, average_sleep_hours } = response.data;
         setAverageWeight(average_weight);
         setAverageSleepHours(average_sleep_hours);
@@ -30,7 +30,7 @@ const Mypage = ({params}:any) => {
 
   const handleSaveData = async () => {
     try {
-      await axios.post('http://localhost:5000/save_data', { weight: weight, sleep_hours: sleepHours, user_id: params.id });
+      await axios.post('http://13.211.73.90:5000/save_data', { weight: weight, sleep_hours: sleepHours, user_id: params.id });
       console.log('Data saved successfully');
       setErrorMessage('');
     } catch (error:any) {
@@ -41,7 +41,7 @@ const Mypage = ({params}:any) => {
 
   const handleVisualize = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/visualize', {params: { user_id: params.id }});
+      const response = await axios.get('http://13.211.73.90:5000/visualize', {params: { user_id: params.id }});
       const imageUrl = response.data.image;
       console.log('Visualization received:', imageUrl);
       setImageSrc(`data:image/png;base64,${imageUrl}`);
@@ -52,7 +52,7 @@ const Mypage = ({params}:any) => {
 
   const handleLogout = async () => {
     try {
-        await axios.get('http://localhost:5000/logout');
+        await axios.get('http://13.211.73.90/logout');
         console.log('Logged out successfully');
         router.push('../../')
     } catch(error) {
