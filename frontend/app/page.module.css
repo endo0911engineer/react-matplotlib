@@ -1,0 +1,187 @@
+/*home*/
+.home {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.home h1{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.home a{
+  background: #eee;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom:30px;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #313131;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+.home a:before{
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  right: -1em;
+  transform: translateY(calc(-50% - 2px)) rotate(30deg);
+  width: 12px;
+  height: 2px;
+  background-color: #ee3e52;
+  transition: 0.3s;
+}
+.home a:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -1em;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background-color: #ee3e52;
+  transition: 0.3s;
+}
+.home a:hover:before,.home a:hover:after {
+  right: -0.5em;
+}
+.home a:hover{
+  background: #edf6ff;
+  color: #ee3e52;
+}
+
+/*login*/
+.login{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.login .form_group {
+  margin-bottom: 15px;
+}
+.login label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.login button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.login .error_message{
+  color: #f70909;
+}
+
+/*register*/
+.register{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.register .form_group {
+  margin-bottom: 15px;
+}
+.register label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.register input[type="text"],
+.register input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.register button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.register .error_message{
+  color: #f70909;
+}
+
+/*mypage*/
+.mypage{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.mypage .input_group{
+  margin-bottom: 15px;
+}
+.mypage label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.mypage input[type="number"]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.mypage .button_panel{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mypage button{
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.mypage .error_message{
+  color: #f70909;
+}
+.visualization{
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; 
+  max-height: 400px; 
+}
+.average_data{
+  display: flex;
+  justify-content: center;
+}
+.average_data p{
+  margin-right: 15px;
+}
