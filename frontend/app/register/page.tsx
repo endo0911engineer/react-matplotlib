@@ -25,7 +25,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post('http://13.211.73.90:5000/register',{
+            const response = await axios.post('https://shintaro.pythonanywhere.com/register',{
                 username: username,
                 password: password
             });
